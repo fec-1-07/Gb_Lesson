@@ -1,4 +1,4 @@
-﻿/*
+/*
 Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 14212 -> нет
 12821 -> да
@@ -11,34 +11,34 @@ string input = Console.ReadLine();
 // Проверяем, является ли введенная строка пятизначным числом
 if (input.Length != 5 || !int.TryParse(input, out int number))
 {
-	Console.WriteLine("Некорректный ввод. Введите пятизначное число.");
-	return;
+  Console.WriteLine("Некорректный ввод. Введите пятизначное число.");
+  return;
 }
 
 // Проверяем, является ли число палиндромом
 bool isPalindrome = CheckPalindrome(number);
 if (isPalindrome)
 {
-	Console.WriteLine("Да, введенное число является палиндромом.");
+  Console.WriteLine("Да, введенное число является палиндромом.");
 }
 else
 {
-	Console.WriteLine("Нет, введенное число не является палиндромом.");
+  Console.WriteLine("Нет, введенное число не является палиндромом.");
 }
 
 // Метод для проверки палиндрома
 static bool CheckPalindrome(int number)
 {
-	string numberStr = number.ToString();
-	int length = numberStr.Length;
-	for (int i = 0; i < length / 2; i++)
-	{
-		if (numberStr[i] != numberStr[length - i - 1])
-		{
-			return false;
-		}
-	}
-	return true;
+  string numberStr = number.ToString();
+  int length = numberStr.Length;
+  for (int i = 0; i < length / 2; i++)
+  {
+	  if (numberStr[i] != numberStr[length - i - 1])
+	  {
+		  return false;
+	  }
+  }
+  return true;
 }
 */
 
