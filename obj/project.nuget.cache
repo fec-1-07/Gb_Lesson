@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "HXcJyVTzr/cvEAxokqx3d9GaABPf5ymTHVvWmkXvfe0WWHIW52ysKaTPMKmk6Toryxi57Dl5i7DkIC8IUP3a0Q==",
   "success": true,
   "projectFilePath": "E:\\Program\\1. Обучение 2023\\0_ Test_Git\\GB\\Seminars\\C#\\homework\\number_1\\Task_1\\decision1\\Task.csproj",
-=======
-  "dgSpecHash": "W7H7kcqzfAH9xSOIISj0SzNsjNVqVjxcqUqhRptbj1uLJf1xF7TFYogoNRQITdNzcfZqw7Y1M02qVxfql3jVWw==",
-  "success": true,
-  "projectFilePath": "E:\\Program\\1. Обучение 2023\\0_ Test_Git\\GB\\Seminars\\C#\\homework\\number_2\\number_2.csproj",
->>>>>>> 3b48c8079c0d6f959dde40e609c0e42f06d668e3
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша E:\\Program\\1. Обучение 2023\\0_ Test_Git\\GB\\Seminars\\C#\\homework\\number_1\\Task_1\\decision1\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

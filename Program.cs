@@ -1,46 +1,43 @@
+/*Задача 64: Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1. Выполнить с помощью рекурсии.
+N = 5 -> "5, 4, 3, 2, 1"
+N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"*/
 
-/* Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
-3, 5 -> 243 (3⁵)
-2, 4-> 16
+Console.WriteLine("Введите значение N:");
+int n = int.Parse(Console.ReadLine());
+
+Console.WriteLine(GenerateNumbers(n));
 
 
-
-
-		  Console.WriteLine("Введите число A:");
-int a = int.Parse(Console.ReadLine());
-
-Console.WriteLine("Введите число B:");
-int b = int.Parse(Console.ReadLine());
-
-int result = 1;
-
-for (int i = 1; i <= b; i++)
+static string GenerateNumbers(int n)
 {
-	result *= a;
+	if (n == 1)
+		return "1";
+
+	return n + ", " + GenerateNumbers(n - 1);
 }
 
-Console.WriteLine($"Результат: {result}");
 
+/*
+Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+M = 1; N = 15 -> 120
+M = 4; N = 8. -> 30
 */
 
-/*Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
-452 -> 11
-82 -> 10
-9012 -> 12
+Console.WriteLine("Введите значение M:");
+int m = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите значение N:");
+int n = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"Сумма чисел от {m} до {n} = {CalculateSum(m, n)}");
 
 
-        Console.WriteLine("Введите число:");
-        int number = int.Parse(Console.ReadLine());
-
-        int sum = 0;
-
-        while (number != 0)
-        {
-            int digit = number % 10;
-            sum += digit;
-            number /= 10;
-        }
-
-        Console.WriteLine($"Сумма цифр: {sum}");
-   
-*/
+static int CalculateSum(int m, int n)
+{
+	int sum = 0;
+	for (int i = m; i <= n; i++)
+	{
+		sum += i;
+	}
+	return sum;
+}
